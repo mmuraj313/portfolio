@@ -1,0 +1,243 @@
+/*-------------------------
+SETTINGS
+-------------------------*/
+
+* {
+    font-family: 'Lato', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+/*-------------------------
+WELCOME SCREEN
+-------------------------*/
+
+/* logo */
+
+
+.pulse {
+    width: 40px;
+    height: 40px;
+    background: #d3483a;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 0 rgba(192, 57, 43, 0.7), 0 0 0 0 rgba(192, 57, 43, 0.7);
+    }
+    40% {
+        box-shadow: 0 0 0 50px rgba(192, 57, 43, 0), 0 0 0 0 rgba(192, 57, 43, 0.7);
+    }
+    80% {
+        box-shadow: 0 0 0 50px rgba(192, 57, 43, 0), 0 0 0 30px rgba(192, 57, 43, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(192, 57, 43, 0), 0 0 0 30px rgba(192, 57, 43, 0);
+    }
+}
+
+/* background */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/computer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+/* message */
+
+.welcome-box h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+    margin-top: 180px;
+    margin-bottom: 30px;
+}
+
+.name-color {
+    color: #c0392b;
+}
+
+/* buttons */
+
+.welcome-btns {
+    text-align: center;
+}
+
+.about-me-btn, .my-projects-btn {
+    border: 1px solid #fff;
+    border-radius: 200px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+}
+
+.about-me-btn {
+    background-color: #c0392b;
+    margin-right: 15px;
+}
+
+/* buttons interaction */
+
+.about-me-btn:hover,
+.about-me-btn:active,
+.my-projects-btn:hover,
+.my-projects-btn:active {
+    border: 3px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+
+.about-me-btn:visited,
+.about-me-btn:link,
+.my-projects-btn:visited,
+.my-projects-btn:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.my-projects-btn:hover {
+    background-color: #c0392b;
+}
+
+
+/*-------------------------
+NAVIGATION
+-------------------------*/
+
+.navbar-inverse {
+    height: 65px;
+}
+
+nav ul li {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+nav ul li:hover {
+    background: #c0392b;
+    transition: 0.5s;
+}
+
+/*-------------------------
+ABOUT SECTION
+-------------------------*/
+
+.section-about {
+    background-attachment: fixed;
+}
+
+.section-about h2, .section-about p {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.section-about p {
+    font-size: 18px;
+}
+
+img.maz-cut-out {
+    display: block;
+    margin: 10px auto;
+    height: auto;
+    width: 400px;
+}
+
+.logo-img img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+
+/*-------------------------
+PROJECTS SECTION
+-------------------------*/
+
+.section-projects {
+    background-image: url(img/pattern.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+
+.section-projects img {
+    width: 500px;
+}
+
+.section-projects h2, .section-projects p, .section-projects h3 {
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.section-projects h3 {
+    padding-bottom: 10px;
+}
+
+.section-projects p {
+    font-size: 18px;
+}
+
+/*-------------------------
+CONTACT SECTION
+-------------------------*/
+
+.section-contact {
+    height: 100vh;
+}
+
+.section-contact h2{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.section-contact p {
+    text-align: justify;
+}
+
+.section-contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-img img {
+    width: 50%;
+    height: auto;
+    display: block;
+    
+}
+
+.contact-img img:hover {
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+/*-------------------------
+FOOTER
+-------------------------*/
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px;
+}
+
+
